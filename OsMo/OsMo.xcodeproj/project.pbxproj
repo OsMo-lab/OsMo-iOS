@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		4D2ACA1A27EA16B600FFA69D /* RoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2ACA1927EA16B600FFA69D /* RoundedButtonStyle.swift */; };
 		4D2ACA1B27EA16B600FFA69D /* RoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2ACA1927EA16B600FFA69D /* RoundedButtonStyle.swift */; };
-		4D76C61027EBA784008A01A6 /* NavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D76C60F27EBA784008A01A6 /* NavigationMenu.swift */; };
-		4D76C61127EBA784008A01A6 /* NavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D76C60F27EBA784008A01A6 /* NavigationMenu.swift */; };
+		4D2BBEB627F783E9007C40E1 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BBEB527F783E9007C40E1 /* TrackerView.swift */; };
+		4D2BBEB727F783E9007C40E1 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BBEB527F783E9007C40E1 /* TrackerView.swift */; };
+		4D7B85C327F766470065C470 /* SlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B85C227F766470065C470 /* SlideMenu.swift */; };
+		4D7B85C427F766470065C470 /* SlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7B85C227F766470065C470 /* SlideMenu.swift */; };
+		4DBC82DD27EE4E61004DF5ED /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DBC82DC27EE4E61004DF5ED /* info.plist */; };
+		4DBC82DE27EE4E61004DF5ED /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DBC82DC27EE4E61004DF5ED /* info.plist */; };
 		4DCCF7D727E8DE5700627B0D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCCF7D627E8DE5700627B0D /* Tests_iOS.swift */; };
 		4DCCF7D927E8DE5700627B0D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCCF7D827E8DE5700627B0D /* Tests_iOSLaunchTests.swift */; };
 		4DCCF7E327E8DE5700627B0D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCCF7E227E8DE5700627B0D /* Tests_macOS.swift */; };
@@ -46,7 +50,9 @@
 
 /* Begin PBXFileReference section */
 		4D2ACA1927EA16B600FFA69D /* RoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonStyle.swift; sourceTree = "<group>"; };
-		4D76C60F27EBA784008A01A6 /* NavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenu.swift; sourceTree = "<group>"; };
+		4D2BBEB527F783E9007C40E1 /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
+		4D7B85C227F766470065C470 /* SlideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenu.swift; sourceTree = "<group>"; };
+		4DBC82DC27EE4E61004DF5ED /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		4DCCF7BE27E8DE5300627B0D /* OsMoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OsMoApp.swift; sourceTree = "<group>"; };
 		4DCCF7BF27E8DE5300627B0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4DCCF7C027E8DE5600627B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 		4DCCF7B827E8DE5300627B0D = {
 			isa = PBXGroup;
 			children = (
+				4DBC82DC27EE4E61004DF5ED /* info.plist */,
 				4DCCF7BD27E8DE5300627B0D /* Shared */,
 				4DCCF7CC27E8DE5600627B0D /* macOS */,
 				4DCCF7D527E8DE5700627B0D /* Tests iOS */,
@@ -110,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				4DCFFB2A27EB605200BC6BCD /* Views */,
-				4DCCF7BE27E8DE5300627B0D /* OsMoApp.swift */,
 				4DCFFB2B27EB60AD00BC6BCD /* SendingManager.swift */,
+				4DCCF7BE27E8DE5300627B0D /* OsMoApp.swift */,
 				4DCCF7C027E8DE5600627B0D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -158,8 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				4DCCF7BF27E8DE5300627B0D /* ContentView.swift */,
+				4D7B85C227F766470065C470 /* SlideMenu.swift */,
 				4D2ACA1927EA16B600FFA69D /* RoundedButtonStyle.swift */,
-				4D76C60F27EBA784008A01A6 /* NavigationMenu.swift */,
+				4D2BBEB527F783E9007C40E1 /* TrackerView.swift */,
 				4DF0BF2C27ECA406003DA48E /* MapView.swift */,
 			);
 			path = Views;
@@ -290,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DBC82DD27EE4E61004DF5ED /* info.plist in Resources */,
 				4DCCF7EA27E8DE5700627B0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DBC82DE27EE4E61004DF5ED /* info.plist in Resources */,
 				4DCCF7EB27E8DE5700627B0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,9 +336,10 @@
 				4DCCF7E827E8DE5700627B0D /* ContentView.swift in Sources */,
 				4DCCF7E627E8DE5700627B0D /* OsMoApp.swift in Sources */,
 				4DCFFB2C27EB60AD00BC6BCD /* SendingManager.swift in Sources */,
-				4D76C61027EBA784008A01A6 /* NavigationMenu.swift in Sources */,
 				4D2ACA1A27EA16B600FFA69D /* RoundedButtonStyle.swift in Sources */,
 				4DF0BF2D27ECA406003DA48E /* MapView.swift in Sources */,
+				4D2BBEB627F783E9007C40E1 /* TrackerView.swift in Sources */,
+				4D7B85C327F766470065C470 /* SlideMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,9 +350,10 @@
 				4DCCF7E927E8DE5700627B0D /* ContentView.swift in Sources */,
 				4DCCF7E727E8DE5700627B0D /* OsMoApp.swift in Sources */,
 				4DCFFB2D27EB60AD00BC6BCD /* SendingManager.swift in Sources */,
-				4D76C61127EBA784008A01A6 /* NavigationMenu.swift in Sources */,
 				4D2ACA1B27EA16B600FFA69D /* RoundedButtonStyle.swift in Sources */,
 				4DF0BF2E27ECA406003DA48E /* MapView.swift in Sources */,
+				4D2BBEB727F783E9007C40E1 /* TrackerView.swift in Sources */,
+				4D7B85C427F766470065C470 /* SlideMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,22 +506,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = SF5DP65BZ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = alexey.sirotkin.OsMo;
+				PRODUCT_BUNDLE_IDENTIFIER = alexey.sirotkin.osmo;
 				PRODUCT_NAME = OsMo;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -524,22 +537,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = SF5DP65BZ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = alexey.sirotkin.OsMo;
+				PRODUCT_BUNDLE_IDENTIFIER = alexey.sirotkin.osmo;
 				PRODUCT_NAME = OsMo;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -562,6 +576,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -590,6 +605,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
